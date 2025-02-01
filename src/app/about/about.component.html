@@ -1,0 +1,29 @@
+<section class="about-section">
+  <div class="container">
+    <h1 class="about-heading">About Me</h1>
+    <div class="about-content">
+      <p class="intro-text">
+        Hi, I’m <strong class="highlight">{{ name }}</strong>, a passionate and dedicated <strong class="highlight">{{ role }}</strong> with a <strong class="highlight">{{ education }}</strong>.
+      </p>
+
+      <div class="experience-section">
+        <h2 class="section-title">Experience</h2>
+        <p class="current-role">Currently, I’m working as a <strong class="highlight">{{ currentRole }}</strong>.</p>
+        <ul class="experience-list">
+          <li *ngFor="let exp of experience" class="experience-item">{{ exp }}</li>
+        </ul>
+      </div>
+
+      <div class="skills-section">
+        <h2 class="section-title">Skills</h2>
+        <ul class="skills-list">
+          <li *ngFor="let skill of skills" class="skill-item">{{ skill }}</li>
+        </ul>
+      </div>
+
+      <p class="outro-text">
+        <strong class="highlight">{{ goals }}</strong>
+      </p>
+    </div>
+  </div>
+</section>

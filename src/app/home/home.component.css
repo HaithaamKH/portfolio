@@ -1,0 +1,88 @@
+/* General Styles */
+.home-section {
+  padding: 4rem 0;
+  background-color: #ffffff;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.profile-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* Image Container */
+.image-container {
+  flex: 1;
+  max-width: 300px;
+}
+
+.profile-img {
+  width: 100%;
+  border-radius: 50%;
+  border: 5px solid #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Text Container */
+.text-container {
+  flex: 2;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.position {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.about-me {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    max-width: 200px;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .position {
+    font-size: 1.5rem;
+  }
+
+  .about-me {
+    font-size: 1rem;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.home-section {
+  animation: fadeIn 1s ease-in-out;
+}
